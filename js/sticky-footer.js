@@ -1,0 +1,1 @@
+$(document).ready(function() {	$(window).resize(function() {		var height = $('footer').outerHeight();				// Set #wrapper to a negative value of the footer height		// #wrapper { margin-bottom		$('#wrapper').css({'margin-bottom: -' + height + 'px'});				// Set #push to a positive value of the footer height		$('#push').css({'height:' + height + 'px'});	});});
