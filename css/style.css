@@ -8,6 +8,9 @@ section {
   margin: 0;
   padding: 0; }
 
+html {
+  font-size: 1rem;
+}
 html,
 body {
 	height: 100%;
@@ -31,25 +34,44 @@ h1, h2, h3, h4, h5, h6 {
 
 #index .jumbotron.splash {
   height: calc(100vh - 60px);
-  max-width: 1600px;
-  background: url('../images/responsive_world.png') no-repeat center center;
+  /* max-width: 1600px; */
+  background: url('../images/world.jpg') no-repeat center center;
   background-size: cover;
-  text-align: center;;
-}
-
-#index .jumbotron.splash .page-title {
-  color: #243954;
-}
-
-#index .jumbotron.splash .page-subtitle small {
-  color: #243954;
-}
-
-#index .jumbotron h4 {
   text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 2px;
 }
+
+#index .jumbotron.splash h1 {
+  color: #243954;
+  text-shadow: 1px 1px 2px;
+  font-size: 2.75rem;
+}
+
+#index .jumbotron.splash h3 {
+  font-size: 1.5rem;
+}
+
+#portfolio-title {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #CCC;
+}
+
+.card {
+  background-color: transparent !important;
+  border: none;
+}
+
+@media only screen and (min-width: 768px) {
+
+  #index .jumbotron.splash h1 {
+    font-size: 5rem;
+  }
+
+  #index .jumbotron.splash h3 {
+    font-size: 2.5rem;
+  }
+}
+
+
 
 /**********************************************
 *****************   HEADER   ******************
