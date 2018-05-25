@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | Matthew J Roybal</title>
+  <title>Matthew J Roybal</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/temp.css" type="text/css" />
@@ -12,72 +12,69 @@
 <body id="index">
 
 	<header>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-      <a class="navbar-brand" href="index.html">MJR</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav navbar-right mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <ul class="d-flex justify-content-around">
+      <li><a class="nav-link text-uppercase font-weight-bold" href="#portfolio">Portfolio</a></li>
+      <li><a class="nav-link text-uppercase font-weight-bold" href="#skills">Skills</a></li>
+      <li><a class="nav-link text-uppercase font-weight-bold" href="#about">About</a></li>
+    </ul>
 	</header>
 
 	<main>
-		<div class="jumbotron splash d-flex align-items-center">
-		  <div class="container-fluid">
-					<h1 class="display-3">Web Developer Ready</h1>
-					<h3 class="text-dark">NodeJS | React | Express | MongoDB</h3>
-          <img class="img-fluid mt-5" src="images/grad.png" />
-				</div>
-		  </div>
-		</div>
+
+    <div id="splash">
+      <video id="splash-video" autoplay muted loop>
+        <source src="videos/RollingEarth.mp4" type="video/mp4">
+      </video>
+      <div id="splash-content">
+        <h1>Matthew J Roybal</h1>
+        <span>NodeJS |</span>
+        <span>React |</span>
+        <span>Express |</span>
+        <span>MongoDB</span>
+      </div>
+    </div>
+
 
 		<div id="portfolio" class="jumbotron even">
-			<div class="container">
-				<h1 id="portfolio-title" class="display-3 text-dark text-center mb-3">Portfolio</h1>
+			<div class="container my-5">
+				<h1 class="text-center my-3">Portfolio</h1>
 
         <div class="card-deck">
-
-          <div class="card">
-            <a href="https://rentplan.com">
-              <img class="card-img-top img-fluid" src="images/rentplan-logo.png" alt="RentPlan Logo">
-            </a>
-            <div class="card-body">
-              <h5 class="card-title">MERN Stack</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <a class="card-text" src="https://www.github.com/MatthewJRoybal/"><small class="text-muted">Last updated 3 mins ago</small></a>
-            </div>
-          </div>
-
-          <div class="card">
-            <a href="https://quizard.me">
-              <img class="card-img-top img-fluid" src="images/quizard-logo.png" alt="Quizard Logo">
-            </a>
-            <div class="card-body">
-              <h5 class="card-title">NodeJS & Jquery</h5>
-              <p class="card-text">This was my second project </p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-          </div>
 
           <div class="card">
             <a href="https://matthewjroybal.github.io/PropertyPackets/">
               <img class="card-img-top" src="images/propertypackets-logo.png" alt="Property Packets Logo">
             </a>
             <div class="card-body">
-              <h5 class="card-title">JavaScript & jQuery</h5>
-              <p class="card-text">This is the first application I built using JavaScript and jQuery. I am using an external
-                API from the U.S. Census Bureau to display the data in graphs using Google Charts.</p>
-              <a href="https://github.com/MatthewJRoybal/PropertyPackets">Github</a>
+              <h5 class="card-title font-weight-bold">First API</h5>
+              <p class="card-text text-justify">Property Packets is the first website I made using an API with JavaScript. The application connects to the U.S. Census Bureau gathering property data. The data is then displayed using Google Charts for a beautiful look. Although I have no plans on expanding this application, it was a great learning experience and helped me begin to understand fundamental concepts in programming.</p>
+              <a href="https://matthewjroybal.github.io/PropertyPackets/"><button type="button" class="btn btn-space">Demo</button></a>
+              <a href="https://github.com/MatthewJRoybal/PropertyPackets"><button type="button" class="btn btn-space2">GitHub</button></a>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="http://quizard.me">
+              <img class="card-img-top img-fluid" src="images/quizard-logo.png" alt="Quizard Logo">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">NodeJS Introduction</h5>
+              <p class="card-text text-justify">Quizard allowed me to immerse myself fully into JavaScript with NodeJS. This application exposed me to important concepts for the first time such as authentication & RESTful web services. The user is able to login into the site and take a quiz with questions pertaining to web development. I am hopeful that one day I can develop this application more and upgrade it with React.</p>
+              <a href="http://quizard.me/"><button type="button" class="btn btn-space">Demo</button></a>
+              <a href="https://github.com/MatthewJRoybal/Quizard-api"><button type="button" class="btn btn-space2">GitHub/API</button></a>
+              <a href="https://github.com/MatthewJRoybal/Quizard-web"><button type="button" class="btn btn-space2">GitHub/Web</button></a>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="http://rentplan-dev.s3-website-us-west-2.amazonaws.com/">
+              <img class="card-img-top img-fluid" src="images/rentplan-logo.png" alt="RentPlan Logo">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">MERN Stack</h5>
+              <p class="card-text text-justify">Rent Plan is the current application I am working on that I plan to continue to expand to learn and grow. It essentially became part major side project and part learning experience with React. By building out a larger application than my previous experience, I've learned that it is providing retainment through repitition. This side project has been full of challenges and has been a lot of fun.</p>
+              <a href="http://rentplan-dev.s3-website-us-west-2.amazonaws.com/"><button type="button" class="btn btn-space">Demo</button></a>
+              <a href="https://github.com/MatthewJRoybal"><button type="button" class="btn btn-space2">Private Repo: Please ask</button></a>
             </div>
           </div>
 
@@ -85,59 +82,72 @@
 			</div>
 		</div>
 
-		<div class="jumbotron odd">
-			<div class="container">
-				<h1>Expertise <small>Web Applications </small></h1>
-				<p>My expertise range from HTML and CSS to Node with React. I've learned a great deal in the past year and I think you'll be pretty impressed on how I've gone from making a simple html site to building a full stack web application from scratch. While I haven't been a professional programmer for another business yet, we all have to start somewhere and I felt it was a good idea to share my list of capabilities with you in one place.</p>
-        <p>Front End: HTML, CSS, SASS, JavaScript, jQuery, Bootstrap, React, Webpack</p>
-        <p>Back End: Node JS, Express, Mocha, Chai</p>
-        <p>Data: MongoDB, Mongoose</p>
-        <p>WorkFlow: Trello, Gliffy, Docker, AWS, Git, GitHub</p>
-				<p><a class="btn btn-primary btn-lg" href="expertise.html" role="button">Learn more</a></p>
+		<div id="skills" class="jumbotron odd">
+			<div class="container my-5">
+        <h1 class="text-center my-5">Skills</h1>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <h4 class="font-weight-bold">Front End</h4>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3/SASS</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+                <li>Bootstrap</li>
+                <li>React</li>
+                <li>Webpack</li>
+                <li>Drupal</li>
+              </ul>
+          </div>
+          <div class="col-md-4">
+            <h4 class="font-weight-bold">Back End & Data</h4>
+              <ul>
+                <li>Express</li>
+                <li>JSONWebToken</li>
+                <li>Passport</li>
+                <li>Mocha</li>
+                <li>Chai</li>
+                <li>Mongoose</li>
+                <li>MongoDB</li>
+              </ul>
+          </div>
+          <div class="col-md-4">
+            <h4 class="font-weight-bold">WorkFlow</h4>
+              <ul>
+                <li>NodeJS</li>
+                <li>Trello</li>
+                <li>Gliffy</li>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>AWS</li>
+                <li>cPanel</li>
+              </ul>
+          </div>
+        </div>
 			</div>
 		</div>
 
-		<div class="jumbotron even">
-			<div class="container">
-				<h1>Experience <small>Putting Pieces Together </small></h1>
-				<p>In the last year I've gained a great deal of experience putting together my own website applications for my portfolio. While that doesn't necessarily all translate into real world, that is my goal. Help me put some solid experience on the books by joining a company where I can grow, learn and become an important contributer to another project!</p>
-        Education
-        Skills
-        Accomplishments
-        Recommendations
-        Resume (CV)
-				<p><a class="btn btn-primary btn-lg" href="experience.html" role="button">Learn more</a></p>
+		<div id="about" class="jumbotron even">
+			<div class="container my-5">
+				<h1 class="text-center my-3">About</h1>
+				<p>I grew up in the San Francisco Bay Area. I am married with two wonderful children. I enjoy many things: Spending time with family, hiking, photography, birds, anything Science Fiction, reading, and writing. I've been a 9-1-1 Dispatcher for San Francisco Department of Emergency Management for the past 12 years and I'm ready for a change. I am very passionate about building web applications and I am seriously hoepful someone will pay me to do it all day long. I can't wait to get started!</p>
+				<p><a class="btn btn-space btn-lg" href="https://www.linkedin.com/in/matthewjroybal/" role="button">More on LinkedIn</a></p>
 			</div>
 		</div>
 
-		<div class="jumbotron odd">
-			<div class="container">
-				<h1>Who is Matthew? <small>A Little More About Me</small></h1>
-				<p>If you'd like to take a glimpse at who I am a little bit more, please visit my about page. While it's important to hire an employee who can get the work done, it's also important that a new hire fits in with everyone and becomes part of the team. Therefore, I wanted to share a little bit more about me and I hope that you believe I would be a great addition to your team and good fit with everyone who works there!</p>
-        Personal Story
-        Goals
-        References
-        Family
-        Interests
-				<p><a class="btn btn-primary btn-lg" href="about.html" role="button">Learn more</a></p>
-			</div>
-		</div>
 	</main>
 
   <footer>
-    <nav class="navbar navbar-expand-lg justify-content-center">
-      <ul class="nav row">
-        <li class="nav-item col-sm">
-          <a class="nav-link" href="contact.html">Contact</a>
+    <nav>
+      <ul class="d-flex justify-content-around">
+        <li>
+          <a class="nav-link text-uppercase font-weight-bold" href="mailto: matthewjroybal@gmail.com">Email</a>
         </li>
-        <li class="nav-item col-sm">
-          <a class="nav-link" href="mailto: matthewjroybal@gmail.com">Email</a>
+        <li>
+          <a class="nav-link text-uppercase font-weight-bold" href="https://www.linkedin.com/in/matthewjroybal/">LinkedIn</a>
         </li>
-        <li class="nav-item col-sm">
-          <a class="nav-link" href="https://www.linkedin.com/in/matthewjroybal/">LinkedIn</a>
-        </li>
-        <li class="nav-item col-sm">
-          <a class="nav-link" href="https://www.GitHub.com/MatthewJRoybal">GitHub</a>
+        <li>
+          <a class="nav-link text-uppercase font-weight-bold" href="https://www.GitHub.com/MatthewJRoybal">GitHub</a>
         </li>
       </ul>
     </nav>

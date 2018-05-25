@@ -1,111 +1,207 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Roboto:400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
 
-html,
-body,
-header,
-main,
-section {
+@font-face {
+  font-family: outOfThisWorld;
+  src: url('../fonts/outofthisworld.ttf'); }
+
+html, body, header, main, section {
   margin: 0;
   padding: 0; }
 
+html, body {
+	height: 100%; }
+
 html {
-  font-size: 1rem;
-}
-html,
-body {
-	height: 100%;
+  font-size: 0.8rem;
 }
 
 * {
   font-family: "Open Sans", sans-serif; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto", sans-serif; }
+/**********************************************
+******************   SPLASH   ******************
+***********************************************/
+
+#splash {
+  position: relative;
+  z-index: -500;
+  height: calc(100vh - 50px);
+  overflow: hidden;
+  background-color: black;
+}
+
+#splash-video {
+  position: relative;
+  z-index: -50;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#splash-content {
+    position: absolute;
+    z-index: 0;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-15%);
+    width: 100%;
+    color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+#splash-content h1 {
+  font-family: outOfThisWorld !important;
+  font-size: 2.25rem;
+}
+
+#splash-content span {
+  font-family: outOfThisWorld !important;
+  font-size: 1.125rem;
+  display: inline-block;
+
+}
+
+/**********************************************
+****************   SECTIONS   *****************
+***********************************************/
 
 .jumbotron {
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 1rem 0.5rem;
+  background-color: #c0c5ce;
+}
 
 .jumbotron.odd {
   background-color: #FFFFFF; }
 
-/**********************************************
-******************   INDEX   ******************
-***********************************************/
-
-#index .jumbotron.splash {
-  height: calc(100vh - 60px);
-  /* max-width: 1600px; */
-  background: url('../images/world.jpg') no-repeat center center;
-  background-size: cover;
-  text-align: center;
+.jumbotron h1 {
+  font-family: outOfThisWorld;
+  font-size: 4rem;
+  color: #343d46;
 }
 
-#index .jumbotron.splash h1 {
-  color: #243954;
-  text-shadow: 1px 1px 2px;
-  font-size: 2.75rem;
+.jumbotron p {
+  color: #343d46;
 }
 
-#index .jumbotron.splash h3 {
-  font-size: 1.5rem;
+.jumbotron .container ul {
+  list-style-type: none;
+  padding-left: 0;
 }
 
-#portfolio-title {
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #CCC;
+.jumbotron .container ul li {
+  font-size: 1.25rem;
 }
+
+.container small, .page-header small {
+	display: block; }
 
 .card {
   background-color: transparent !important;
   border: none;
 }
 
-@media only screen and (min-width: 768px) {
+#skills {
+  background: url(../images/space-bg.jpg) repeat;
+  background-size: cover;
+}
 
-  #index .jumbotron.splash h1 {
+#skills, #skills h1 {
+  color: #c0c5ce;
+}
+
+.jumbotron .card-body {
+  padding: 1.125rem;
+}
+
+.jumbotron button.btn.btn-space, .jumbotron a.btn.btn-space {
+  background-color: #343d46;
+  color: #c0c5ce;
+}
+
+.jumbotron button.btn.btn-space:hover, .jumbotron a.btn.btn-space:hover {
+  background-color: #2243B6;
+}
+
+.jumbotron button.btn.btn-space2, .jumbotron a.btn.btn-space2 {
+  background-color: #4f5b66;
+  color: #c0c5ce;
+}
+
+.jumbotron button.btn.btn-space2:hover, .jumbotron a.btn.btn-space2:hover {
+  background-color: #2243B6;
+}
+
+/**********************************************
+*************   HEADER & FOOTER  **************
+***********************************************/
+
+header, footer {
+  z-index: 1000;
+  background-color: black;
+}
+
+header ul, footer ul {
+  margin-bottom: 0;
+  padding: 10px 0;
+  list-style-type: none;
+}
+
+header ul li a, footer ul li a {
+  font-family: outOfThisWorld;
+  font-size: 1.125rem;
+  letter-spacing: 0.05em;
+  color: blue;
+  text-shadow:
+    -1px -1px 0 rgba(212,175,55,0.75),
+		 1px -1px 0 rgba(212,175,55,0.75),
+		-1px 1px 0 rgba(212,175,55,0.75),
+		 1px 1px 0 rgba(212,175,55,0.75);
+}
+
+header ul li a:hover, footer ul li a:hover {
+  color: rgb(212, 175, 55);
+  text-shadow: none;
+}
+
+/*
+ * MIN-WIDTH 768PX
+ */
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 1rem;
+  }
+
+  header ul li a, footer ul li a {
+    font-size: 1.5rem;
+  }
+
+}
+
+/*
+ * MIN-WIDTH 768PX AND MAX-WIDTH 1366PX
+ */
+
+@media only screen and (min-width: 768px) and (max-width: 1366px ) {
+  #splash-content h1 {
+    font-size: 4rem;
+  }
+  #splash-content span {
+    font-size: 2rem;
+  }
+}
+
+/*
+ * MIN-WIDTH 1367PX
+ */
+
+@media only screen and (min-width: 1367px) {
+  #splash-content h1 {
     font-size: 5rem;
   }
-
-  #index .jumbotron.splash h3 {
+  #splash-content span {
     font-size: 2.5rem;
   }
-}
-
-
-
-/**********************************************
-*****************   HEADER   ******************
-***********************************************/
-
-header .navbar-dark {
-  font-weight: bold;
-}
-
-header .navbar-dark .navbar-brand:hover {
-  color: #009639; }
-
-header .navbar-dark .navbar-nav .nav-link:hover {
-  color: #009639; }
-
-/**********************************************
-******************   FOOTER   *****************
-***********************************************/
-
-footer nav.navbar {
-  background-color: #343a40
-}
-
-footer a {
-  font-size: 16px;
-  color: #FFFFFF;
-  letter-spacing: 0.05em;
-  font-weight: bold;
-}
-
-footer li a:hover {
-  color: #009639;
-}
-
-footer .col-sm {
-  text-align: center;
 }
