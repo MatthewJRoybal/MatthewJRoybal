@@ -9,6 +9,7 @@ import RollingEarth from '../styles/video/RollingEarth.mp4';
 import PropertyPackets from '../styles/images/propertypackets-logo.png';
 import Quizard from '../styles/images/quizard-logo.png';
 import RentPlan from '../styles/images/rentplan-logo.png';
+import Sfdem from '../styles/images/sfdem-logo.png';
 
 class App extends Component {
 	constructor() {
@@ -57,39 +58,39 @@ class App extends Component {
                   <div className="card-body">
                     <h5 className="card-title font-weight-bold">First API</h5>
                     <p className="card-text text-justify">Property Packets is the first website I made using an API with JavaScript. The application connects to the U.S. Census Bureau gathering property data. The data is then displayed using Google Charts for a beautiful look. Although I have no plans on expanding this application, it was a great learning experience and helped me begin to understand fundamental concepts in programming.</p>
-                    <Link to="https://matthewjroybal.github.io/PropertyPackets/" target="_blank" rel="noopener noreferrer"><button type="button" className="btn btn-space">Demo</button></Link>
+                    <Link to="https://matthewjroybal.github.io/PropertyPackets/" target="_blank" rel="noopener noreferrer"><button type="button" className="btn btn-space mr-3">Demo</button></Link>
                     <Link to="https://github.com/MatthewJRoybal/PropertyPackets" target="_blank" rel="noopener noreferrer"><button type="button" className="btn btn-space2">GitHub</button></Link>
                   </div>
                 </div>
 
                 <div className="card">
-                  <a href="http://quizard.me" target="_blank" rel="noopener noreferrer">
-                    <img className="card-img-top img-fluid" src={Quizard} alt="Quizard Logo" />
-                  </a>
-                  <div className="card-body">
-                    <h5 className="card-title font-weight-bold">NodeJS Introduction</h5>
-                    <p className="card-text text-justify">Quizard allowed me to immerse myself fully into JavaScript with NodeJS. This application exposed me to important concepts for the first time such as authentication & RESTful web services. The user is able to login into the site and take a quiz with questions pertaining to web development. I am hopeful that one day I can develop this application more and upgrade it with React.</p>
-                    <a href="http://quizard.me/" target="_blank" rel="noopener noreferrer"><button type="button" className="btn btn-space">Demo</button></a>
-                    <a href="https://github.com/MatthewJRoybal/Quizard-api" target="_blank" rel="noopener noreferrer"><button type="button" className="btn btn-space2">GitHub/API</button></a>
-                    <a href="https://github.com/MatthewJRoybal/Quizard-client" target="_blank" rel="noopener noreferrer"><button type="button" className="btn btn-space2">GitHub/Web</button></a>
-                  </div>
-                </div>
-
-                <div className="card">
-                  <a href="http://rentplan-dev.s3-website-us-west-2.amazonaws.com/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.rentplan.com/" target="_blank" rel="noopener noreferrer">
                     <img className="card-img-top img-fluid" src={RentPlan} alt="RentPlan Logo" />
                   </a>
                   <div className="card-body">
                     <h5 className="card-title font-weight-bold">MERN Stack</h5>
                     <p className="card-text text-justify">Rent Plan is the current application I am working on that I plan to continue to expand to learn and grow. It essentially became part major side project and part learning experience with React. By building out a larger application than my previous experience, I've learned that it is providing retainment through repitition. This side project has been full of challenges and has been a lot of fun.</p>
-                    <a href="http://rentplan-dev.s3-website-us-west-2.amazonaws.com/" target="_blank" rel="noopener noreferrer"><button type="button" className="btn btn-space">Demo</button></a>
-                    <a href="https://github.com/MatthewJRoybal" target="_blank" rel="noopener noreferrer"><button type="button" className="btn btn-space2">Private Repo: Please ask</button></a>
+                    <a href="https://www.rentplan.com/" target="_blank" rel="noopener noreferrer"><button type="button" className="btn btn-space mr-3">Demo</button></a>
+                    <a href="https://github.com/MatthewJRoybal" target="_blank" rel="noopener noreferrer"><button type="button" className="btn btn-space2">Private: Please ask</button></a>
                   </div>
                 </div>
+
+								<div className="card">
+			            <a href="https://50.208.51.198:5000/" target="_blank">
+			              <img className="card-img-top img-fluid" src={Sfdem} alt="SFDEM Logo" />
+			            </a>
+			            <div className="card-body">
+			              <h5 className="card-title font-weight-bold">Completed Project</h5>
+			              <p className="card-text text-justify">The San Francisco Department of Emergency Management scheduling application allows Dispatchers to view and bid for shifts every 6 months. It is nearly completion and is a great example of working application in the real world. This project took nearly 6 months to complete and is helping the Department transform from paper to online scheduling.</p>
+			              <a href="https://50.208.51.198:5000/" target="_blank"><button type="button" className="btn btn-space">Ask for demo</button></a>
+			            </div>
+			          </div>
 
               </div>
             </div>
           </div>
+
+
 
           <div id="skills" className="jumbotron odd">
             <div className="container my-5">
