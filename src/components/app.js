@@ -81,7 +81,7 @@ class App extends Component {
 			            <div className="card-body">
 			              <h5 className="card-title font-weight-bold">Completed Project</h5>
 			              <p className="card-text text-justify">The San Francisco Department of Emergency Management scheduling application allows Dispatchers to view and bid for shifts every 6 months. It is nearly completion and is a great example of working application in the real world. This project took nearly 6 months to complete and is helping the Department transform from paper to online scheduling.</p>
-			              <a href="https://50.208.51.198:5000/" target="_blank" rel="noopener noreferrer"><button type="button" className="btn btn-space">Ask for demo</button></a>
+			              <a href="http://50.208.51.198:5000/" target="_blank" rel="noopener noreferrer"><button type="button" className="btn btn-space">Ask for demo</button></a>
 			            </div>
 			          </div>
 
