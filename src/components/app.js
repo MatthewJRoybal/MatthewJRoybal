@@ -51,14 +51,14 @@ class App extends Component {
               <div className="card-deck">
 
                 <div className="card">
-                  <a href="https://www.rentplan.com/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://matthewjroybal.github.io/PropertyPackets/" target="_blank" rel="noopener noreferrer">
                     <img className="card-img-top" src={PropertyPackets} alt="Property Packets Logo" />
                   </a>
                   <div className="card-body">
                     <h5 className="card-title font-weight-bold">First API</h5>
                     <p className="card-text text-justify">Property Packets is the first website I made using an API with JavaScript. The application connects to the U.S. Census Bureau gathering property data. The data is then displayed using Google Charts for a beautiful look. Although I have no plans on expanding this application, it was a great learning experience and helped me begin to understand fundamental concepts in programming.</p>
-											<a href="https://www.rentplan.com/" target="_blank" rel="noopener noreferrer"><button type="button" className="btn btn-space mr-3">Demo</button></a>
-	                    <a href="https://github.com/MatthewJRoybal" target="_blank" rel="noopener noreferrer"><button type="button" className="btn btn-space2">Private: Please ask</button></a>
+											<a href="https://matthewjroybal.github.io/PropertyPackets/" target="_blank" rel="noopener noreferrer"><button type="button" className="btn btn-space mr-3">Demo</button></a>
+	                    <a href="https://github.com/MatthewJRoybal/PropertyPackets" target="_blank" rel="noopener noreferrer"><button type="button" className="btn btn-space2">GitHub</button></a>
                   </div>
                 </div>
 
