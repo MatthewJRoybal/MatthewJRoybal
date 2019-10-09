@@ -5,7 +5,7 @@
 
 import React, { Component } from 'react';
 import RollingEarth from '../styles/video/RollingEarth.mp4';
-import PropertyPackets from '../styles/images/propertypackets-logo.png';
+// import PropertyPackets from '../styles/images/propertypackets-logo.png';
 import RentPlan from '../styles/images/rentplan-logo.png';
 import Sfdem from '../styles/images/sfdem-logo.png';
 import Netflix from '../styles/images/netflix.png';
@@ -45,14 +45,13 @@ class App extends Component {
             </div>
           </div>
 
-
           <div id="portfolio" className="jumbotron even">
-            <div className="container my-5">
-              <h1 className="text-center my-3">Portfolio</h1>
+            <div className="text-center container my-5">
+              <span className="my-3 display-3">Portfolio</span>
 
-              <div className="card-deck">
+              <div className="row">
 
-                <div className="card">
+                {/**<div className="card">
                   <a href="https://matthewjroybal.github.io/PropertyPackets/" target="_blank" rel="noopener noreferrer">
                     <img className="card-img-top" src={PropertyPackets} alt="Property Packets Logo" />
                   </a>
@@ -62,27 +61,27 @@ class App extends Component {
 											<a href="https://matthewjroybal.github.io/PropertyPackets/" target="_blank" rel="noopener noreferrer"><button type="button" className="btn btn-space mr-3">Demo</button></a>
 	                    <a href="https://github.com/MatthewJRoybal/PropertyPackets" target="_blank" rel="noopener noreferrer"><button type="button" className="btn btn-space2">GitHub</button></a>
                   </div>
-                </div>
+                </div>**/}
 
-                <div className="card">
+                <div className="col-12 col-md-6">
                   <a href="https://www.rentplan.com/" target="_blank" rel="noopener noreferrer">
                     <img className="card-img-top img-fluid" src={RentPlan} alt="RentPlan Logo" />
                   </a>
                   <div className="card-body">
-                    <h5 className="card-title font-weight-bold">MERN Stack</h5>
-                    <p className="card-text text-justify">Rent Plan is the current application I am working on that I plan to continue to expand to learn and grow. It essentially became part major side project and part learning experience with React. By building out a larger application than my previous experience, I've learned that it is providing retainment through repitition. This side project has been full of challenges and has been a lot of fun.</p>
+                    <h5 className="card-title font-weight-bold">Rent Plan (In Production)</h5>
+                    <p className="card-text text-justify">Rent Plan is a personal project that has grown over time and is now in production using AWS. Using Node, React, Express, and MongoDB, this project harnesses my strong points and keeps me challenged late at night. As the application grows, Redux is now being added to help manage state. This side project continues to keep me involved in programming on a daily basis.</p>
                     <a href="https://www.rentplan.com/" target="_blank" rel="noopener noreferrer"><button type="button" className="btn btn-space mr-3">Demo</button></a>
                     <a href="https://github.com/MatthewJRoybal" target="_blank" rel="noopener noreferrer"><button type="button" className="btn btn-space2">Private: Please ask</button></a>
                   </div>
                 </div>
 
-								<div className="card">
+								<div className="col-12 col-md-6">
 			            <a href="https://sfdem.app/" target="_blank" rel="noopener noreferrer">
 			              <img className="card-img-top img-fluid" src={Sfdem} alt="SFDEM Logo" />
 			            </a>
 			            <div className="card-body">
-			              <h5 className="card-title font-weight-bold">Completed Project</h5>
-			              <p className="card-text text-justify">The San Francisco Department of Emergency Management scheduling application allows Dispatchers to view and bid for shifts every 6 months. It is nearly completion and is a great example of working application in the real world. This project took nearly 6 months to complete and is helping the Department transform from paper to online scheduling.</p>
+			              <h5 className="card-title font-weight-bold">SFDEM (In Production)</h5>
+			              <p className="card-text text-justify">The San Francisco Department of Emergency Management scheduling application allows Dispatchers to view and bid for shifts every 6 months. This project took nearly 6 months to complete and is helping the Department transform from paper to online scheduling. I loved putting this project together to help the employees experience a piece of software that worked for them.</p>
 			              <a href="https://sfdem.app/" target="_blank" rel="noopener noreferrer"><button type="button" className="btn btn-space">Ask for demo</button></a>
 			            </div>
 			          </div>

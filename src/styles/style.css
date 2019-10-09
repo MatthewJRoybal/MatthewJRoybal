@@ -16,7 +16,12 @@ html {
 }
 
 * {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-family: outOfThisWorld;
+}
 
 /**********************************************
 ******************   SPLASH   ******************
@@ -75,9 +80,9 @@ html {
 .jumbotron.odd {
   background-color: #FFFFFF; }
 
-.jumbotron h1 {
+.jumbotron h1,
+.jumbotron .display-3 {
   font-family: outOfThisWorld;
-  font-size: 4rem;
   color: #343d46;
 }
 
