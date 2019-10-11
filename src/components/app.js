@@ -68,10 +68,11 @@ class App extends Component {
                     <img className="card-img-top img-fluid" src={RentPlan} alt="RentPlan Logo" />
                   </a>
                   <div className="card-body">
-                    <h5 className="card-title font-weight-bold">Rent Plan (In Production)</h5>
-                    <p className="card-text text-justify">Rent Plan is a personal project that has grown over time and is now in production using AWS. Using Node, React, Express, and MongoDB, this project harnesses my strong points and keeps me challenged late at night. As the application grows, Redux is now being added to help manage state. This side project continues to keep me involved in programming on a daily basis.</p>
-                    <a href="https://www.rentplan.com/" target="_blank" rel="noopener noreferrer"><button type="button" className="btn btn-space mr-3">Demo</button></a>
-                    <a href="https://github.com/MatthewJRoybal" target="_blank" rel="noopener noreferrer"><button type="button" className="btn btn-space2">Private: Please ask</button></a>
+                    <h5 className="card-title font-weight-bold">MERN Stack (In Production)</h5>
+                    <p className="card-text text-justify">It seems like every Software Engineer has their own personal project and I'm no different. This application is my personal project called Rent Plan. It has grown slowly, yet steadily over the past year and is now in production using AWS S3, Heroku, and MongoDB Atlas. Utilizing Node, React, Express, and MongoDB, this project harnesses my strong points and keeps me challenged late at night.</p>
+                    <a href="https://www.rentplan.com/" target="_blank" rel="noopener noreferrer"><button type="button" className="btn btn-space mr-3">In Production</button></a>
+                    <a href="https://github.com/MatthewJRoybal/RentPlan-web" target="_blank" rel="noopener noreferrer"><button type="button" className="btn btn-space2 mr-3">Repo: Front</button></a>
+										<a href="https://github.com/MatthewJRoybal/RentPlan-api" target="_blank" rel="noopener noreferrer"><button type="button" className="btn btn-space2">Repo: Back</button></a>
                   </div>
                 </div>
 
@@ -81,8 +82,8 @@ class App extends Component {
 			            </a>
 			            <div className="card-body">
 			              <h5 className="card-title font-weight-bold">SFDEM (In Production)</h5>
-			              <p className="card-text text-justify">The San Francisco Department of Emergency Management scheduling application allows Dispatchers to view and bid for shifts every 6 months. This project took nearly 6 months to complete and is helping the Department transform from paper to online scheduling. I loved putting this project together to help the employees experience a piece of software that worked for them.</p>
-			              <a href="https://sfdem.app/" target="_blank" rel="noopener noreferrer"><button type="button" className="btn btn-space">Ask for demo</button></a>
+			              <p className="card-text text-justify">I was the Lead Software Engineer for this project working in solo capacity. I started this application from scratch and put it into production 5 months later. The application allows Dispatchers from The San Francisco Department of Emergency Management to view and bid for shifts every 6 months. I have had a lot of positive feedback on this application and hope to see it expanded one day.</p>
+			              <a href="https://sfdem.app/" target="_blank" rel="noopener noreferrer"><button type="button" className="btn btn-space">In Production - Ask for demo</button></a>
 			            </div>
 			          </div>
 
