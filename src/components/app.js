@@ -33,10 +33,10 @@ class App extends Component {
         <main>
 
           <div id="splash">
-            <video id="splash-video" autoPlay loop>
-              <source type="video/mp4" src={RollingEarth} />
+            <video id="splash-video" loop autoPlay muted>
+              <source src={RollingEarth} type="video/mp4" />
             </video>
-            <div id="splash-content">
+						<div id="splash-content">
               <h1>Matthew J Roybal</h1>
               <span>NodeJS |</span>
               <span>React |</span>
