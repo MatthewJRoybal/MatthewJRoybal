@@ -5,15 +5,21 @@
 
 # AUDIO #
 #########
-
+/src/styles/audio/
+*.wav
+*.mp3
 
 # IMAGES #
 ##########
-
+/src/styles/images/
+*.jpg
+*.png
 
 # VIDEOS #
 ##########
-
+/src/styles/videos/
+*.mov
+*.mp4
 
 # TESTING #
 ###########
