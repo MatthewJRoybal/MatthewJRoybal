@@ -151,12 +151,13 @@ class App extends Component {
                       <li>HTML5</li>
                       <li>CSS3/SASS</li>
                       <li>JavaScript</li>
-                      <li>jQuery</li>
                       <li>Bootstrap</li>
                       <li>React</li>
-                      <li>Webpack</li>
-                      <li>Drupal</li>
-											<li>Cross Browser</li>
+                      <li>React Helmet</li>
+                      <li>Redux</li>
+                      <li>Jest</li>
+                      <li>Selinium</li>
+                      <li>TypeScript</li>
                     </ul>
                 </div>
                 <div className="col-md-4">
@@ -175,12 +176,13 @@ class App extends Component {
                   <h4 className="font-weight-bold">WorkFlow</h4>
                     <ul>
                       <li>NodeJS</li>
-                      <li>Trello</li>
-                      <li>Gliffy</li>
+                      <li>VS Code</li>
+                      <li>eslint</li>
+                      <li>husky</li>
+                      <li>Prettier</li>
                       <li>Git</li>
                       <li>GitHub</li>
                       <li>AWS</li>
-                      <li>cPanel</li>
 											<li>DotEnv</li>
                     </ul>
                 </div>
